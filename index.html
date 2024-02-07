@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form Validation</title>
+    
+    <!-- Bootstrap Css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-8 offset-md-2 bg-white rounded-4 p-5 ">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6">
+                        <label for="first_name" class="form-label">First Name</label>
+                      <input type="text" class="form-control first_name" id="first_name" placeholder="Your First Name" required> 
+                      <div class="valid-feedback">Looks Good</div>
+    				  <div class="invalid-feedback">*this field is required</div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="last_name" class="form-label">Last Name</label>
+                      <input type="text" class="form-control last_name" id="last_name" placeholder="Your Last Name" required> 
+                      <div class="valid-feedback">Looks Good</div>
+    				  <div class="invalid-feedback">*this field is required</div>
+                    </div>
+                    <div class="col-md-12">
+
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group">
+                            
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" id="username" required >
+                            <div class="valid-feedback">Looks Good</div>
+    				        <div class="invalid-feedback">*this field is required</div>
+                         </div>
+                      
+                    </div>
+                    <div class="col-md-12">
+                        <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control email" id="email" placeholder="Enter Your Email" required> 
+                      <div class="valid-feedback">Looks Good</div>
+    				  <div class="invalid-feedback">*this field is required</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="password" class="form-label ">Password</label>
+                        <input type="password" class="form-control password" id="password" 
+                        placeholder="Enter Password" required>
+                        <div class="valid-feedback">Looks Good</div>
+    				    <div class="invalid-feedback">*this field is required</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="confirmPassword" class="form-label ">Confirm Password</label>
+                        <input type="password" class="form-control confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+                        <div class="valid-feedback">Looks Good</div>
+    				    <div class="invalid-feedback">*this field is required</div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="country" class="form-label ">Country</label>
+                        <input type="text" class="form-control country" id="country" value="Bangladesh" disabled>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label for="city" class="form-label">City</label>
+                        <input class="form-control" list="cityList" id="city" placeholder="Select City" required>
+                        <datalist id="cityList">
+                          <option value="Dhaka">
+                          <option value="Chittagong">
+                          <option value="Khulna">
+                          <option value="Jossore">
+                          <option value="Barisal">
+                          <option value="Rangpur">
+                          <option value="Rajsahi">
+                          <option value="Maymanshing">
+                        </datalist>
+                      </div>
+                   
+                     
+                      <div class="col-md-2">
+                        <label for="zipCode" class="form-label">Zip Code</label>
+                        <input type="text" class="form-control zipCode" id="zipCode" required placeholder="1216">
+                        <div class="valid-feedback">Looks Good</div>
+    				    <div class="invalid-feedback">*this field is required</div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <label for="address" class="form-label">Address</label>
+                      <input type="text" class="form-control address" id="address" placeholder="Apartment, studio, or floor" required> 
+                      <div class="valid-feedback">Looks Good</div>
+    				  <div class="invalid-feedback">*this field is required</div>
+                    </div>
+
+                
+                    
+                
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input " type="checkbox" id="termsAndCondition" required>
+                        <label class="form-check-label" for="termsAndCondition">
+                            I Agree to the terms and conditions.
+                        </label>
+                     
+    				   <div class="invalid-feedback">Please Check this box</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Cerate a account</button>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Bootstarp Js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
